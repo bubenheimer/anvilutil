@@ -1,0 +1,77 @@
+/*
+ * Copyright (c) 2015-2023 Uli Bubenheimer
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+pluginManagement {
+    repositories {
+        mavenCentral()
+    }
+}
+
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+    }
+
+    versionCatalogs {
+        libs {
+            version('anvil', '2.4.4')
+
+            version('auto-service', '1.0.1')
+            version('auto-service-ksp', '1.0.0')
+
+            version('dagger', '2.45')
+
+            version('java', JavaVersion.VERSION_11.toString())
+
+            version('kotlin', '1.8.10')
+
+            version('kotlinPoet', '1.12.0')
+
+            version('ksp', '1.8.10-1.0.9')
+
+
+            plugin('anvil', 'com.squareup.anvil')
+                    .versionRef('anvil')
+
+            plugin('kotlin-jvm', 'org.jetbrains.kotlin.jvm')
+                    .versionRef('kotlin')
+
+            plugin('ksp', 'com.google.devtools.ksp')
+                .versionRef('ksp')
+
+            library('anvil-compiler-api', 'com.squareup.anvil', 'compiler-api')
+                    .versionRef('anvil')
+            library('anvil-compiler-utils', 'com.squareup.anvil', 'compiler-utils')
+                    .versionRef('anvil')
+
+            library('auto-service-ksp', 'dev.zacsweers.autoservice', 'auto-service-ksp')
+                    .versionRef('auto-service-ksp')
+            library('auto-service-annotations', 'com.google.auto.service', 'auto-service-annotations')
+                    .versionRef('auto-service')
+
+            library('dagger', 'com.google.dagger', 'dagger')
+                    .versionRef('dagger')
+
+            library('kotlinPoet', 'com.squareup', 'kotlinpoet')
+                    .versionRef('kotlinPoet')
+        }
+    }
+}
+
+rootProject.setName("anvilutil")
+
+include('annotations')
+include('generator')
