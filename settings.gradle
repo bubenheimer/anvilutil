@@ -29,9 +29,6 @@ dependencyResolutionManagement {
         libs {
             version('anvil', '2.4.4')
 
-            version('auto-service', '1.0.1')
-            version('auto-service-ksp', '1.0.0')
-
             version('dagger', '2.45')
 
             version('java', JavaVersion.VERSION_11.toString())
@@ -40,8 +37,6 @@ dependencyResolutionManagement {
 
             version('kotlinPoet', '1.12.0')
 
-            version('ksp', '1.8.10-1.0.9')
-
 
             plugin('anvil', 'com.squareup.anvil')
                     .versionRef('anvil')
@@ -49,18 +44,10 @@ dependencyResolutionManagement {
             plugin('kotlin-jvm', 'org.jetbrains.kotlin.jvm')
                     .versionRef('kotlin')
 
-            plugin('ksp', 'com.google.devtools.ksp')
-                .versionRef('ksp')
-
             library('anvil-compiler-api', 'com.squareup.anvil', 'compiler-api')
                     .versionRef('anvil')
             library('anvil-compiler-utils', 'com.squareup.anvil', 'compiler-utils')
                     .versionRef('anvil')
-
-            library('auto-service-ksp', 'dev.zacsweers.autoservice', 'auto-service-ksp')
-                    .versionRef('auto-service-ksp')
-            library('auto-service-annotations', 'com.google.auto.service', 'auto-service-annotations')
-                    .versionRef('auto-service')
 
             library('dagger', 'com.google.dagger', 'dagger')
                     .versionRef('dagger')

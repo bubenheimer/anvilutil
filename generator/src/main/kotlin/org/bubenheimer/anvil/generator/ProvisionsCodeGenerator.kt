@@ -18,7 +18,6 @@
 
 package org.bubenheimer.anvil.generator
 
-import com.google.auto.service.AutoService
 import com.squareup.anvil.annotations.ContributesTo
 import com.squareup.anvil.annotations.ExperimentalAnvilApi
 import com.squareup.anvil.compiler.api.AnvilContext
@@ -42,7 +41,6 @@ import org.jetbrains.kotlin.name.FqName
 import org.jetbrains.kotlin.psi.KtFile
 import java.io.File
 
-@AutoService(CodeGenerator::class)
 internal class ProvisionsCodeGenerator : CodeGenerator {
     override fun isApplicable(context: AnvilContext) = !context.generateFactoriesOnly
 

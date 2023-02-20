@@ -1,0 +1,3 @@
+org.bubenheimer.anvil.generator.AndBindsCodeGenerator
+org.bubenheimer.anvil.generator.AutoInjectCodeGenerator
+org.bubenheimer.anvil.generator.ProvisionsCodeGenerator

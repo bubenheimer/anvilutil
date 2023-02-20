@@ -16,7 +16,6 @@
 
 plugins {
     id('common-conventions')
-    alias(libs.plugins.ksp)
     alias(libs.plugins.anvil)
 }
 
@@ -27,7 +26,4 @@ dependencies {
     implementation(libs.anvil.compiler.utils)
     implementation(libs.dagger)
     implementation(libs.kotlinPoet)
-
-    implementation(libs.auto.service.annotations)
-    ksp(libs.auto.service.ksp)
 }
