@@ -17,13 +17,3 @@
 plugins {
     alias(libs.plugins.kotlin.jvm) apply(false)
 }
-
-subprojects {
-    // ksp does not see the standard jvmTarget config:
-    // https://youtrack.jetbrains.com/issue/KT-55947/Unable-to-set-kapt-jvm-target-version
-    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
-        kotlinOptions {
-            jvmTarget = libs.versions.java.get()
-        }
-    }
-}
