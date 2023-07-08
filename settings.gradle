@@ -27,15 +27,15 @@ dependencyResolutionManagement {
 
     versionCatalogs {
         libs {
-            version('anvil', '2.4.4')
+            version('anvil', '2.4.6')
 
-            version('dagger', '2.45')
+            version('dagger', '2.47')
 
             version('java', JavaVersion.VERSION_11.toString())
 
-            version('kotlin', '1.8.10')
+            version('kotlin', '1.8.22')
 
-            version('kotlinPoet', '1.12.0')
+            version('kotlinPoet', '1.14.2')
 
 
             plugin('anvil', 'com.squareup.anvil')
