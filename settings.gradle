@@ -27,7 +27,7 @@ dependencyResolutionManagement {
 
     versionCatalogs {
         libs {
-            version('anvil', '2.4.6')
+            version('anvil', '2.4.7')
 
             version('dagger', '2.47')
 
