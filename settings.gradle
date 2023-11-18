@@ -29,13 +29,13 @@ dependencyResolutionManagement {
         libs {
             version('anvil', '2.4.8')
 
-            version('dagger', '2.48')
+            version('dagger', '2.48.1')
 
             version('java', JavaVersion.VERSION_11.toString())
 
-            version('kotlin', '1.9.10')
+            version('kotlin', '1.9.20')
 
-            version('kotlinPoet', '1.14.2')
+            version('kotlinPoet', '1.15.0')
 
 
             plugin('anvil', 'com.squareup.anvil')
