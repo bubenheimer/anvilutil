@@ -35,7 +35,7 @@ dependencyResolutionManagement {
 
             version('kotlin', '1.9.20')
 
-            version('kotlinPoet', '1.15.0')
+            version('kotlinPoet', '1.15.1')
 
 
             plugin('anvil', 'com.squareup.anvil')
