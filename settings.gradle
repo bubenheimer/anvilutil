@@ -33,9 +33,9 @@ dependencyResolutionManagement {
 
             version('java', JavaVersion.VERSION_11.toString())
 
-            version('kotlin', '1.9.20')
+            version('kotlin', '1.9.21')
 
-            version('kotlinPoet', '1.15.1')
+            version('kotlinPoet', '1.15.2')
 
 
             plugin('anvil', 'com.squareup.anvil')
