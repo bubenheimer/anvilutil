@@ -27,13 +27,13 @@ dependencyResolutionManagement {
 
     versionCatalogs {
         libs {
-            version('anvil', '2.4.8')
+            version('anvil', '2.4.9')
 
             version('dagger', '2.50')
 
             version('java', JavaVersion.VERSION_11.toString())
 
-            version('kotlin', '1.9.21')
+            version('kotlin', '1.9.22')
 
             version('kotlinPoet', '1.15.3')
 
