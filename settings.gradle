@@ -24,38 +24,6 @@ dependencyResolutionManagement {
     repositories {
         mavenCentral()
     }
-
-    versionCatalogs {
-        libs {
-            version('anvil', '2.4.9')
-
-            version('dagger', '2.50')
-
-            version('java', JavaVersion.VERSION_11.toString())
-
-            version('kotlin', '1.9.22')
-
-            version('kotlinPoet', '1.15.3')
-
-
-            plugin('anvil', 'com.squareup.anvil')
-                    .versionRef('anvil')
-
-            plugin('kotlin-jvm', 'org.jetbrains.kotlin.jvm')
-                    .versionRef('kotlin')
-
-            library('anvil-compiler-api', 'com.squareup.anvil', 'compiler-api')
-                    .versionRef('anvil')
-            library('anvil-compiler-utils', 'com.squareup.anvil', 'compiler-utils')
-                    .versionRef('anvil')
-
-            library('dagger', 'com.google.dagger', 'dagger')
-                    .versionRef('dagger')
-
-            library('kotlinPoet', 'com.squareup', 'kotlinpoet')
-                    .versionRef('kotlinPoet')
-        }
-    }
 }
 
 rootProject.setName("anvilutil")

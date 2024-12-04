@@ -1,0 +1,30 @@
+[versions]
+
+anvil = '2.5.0'
+
+dagger = '2.53'
+
+java-source = '11'
+
+java-toolchain = '21'
+
+kotlin = '2.0.21'
+
+kotlinPoet = '2.0.0'
+
+
+[libraries]
+
+anvil-compiler-api = { module = 'com.squareup.anvil:compiler-api', version.ref = 'anvil' }
+anvil-compiler-utils = { module = 'com.squareup.anvil:compiler-utils', version.ref = 'anvil' }
+
+dagger = { module = 'com.google.dagger:dagger', version.ref = 'dagger' }
+
+kotlinPoet = { module = 'com.squareup:kotlinpoet', version.ref = 'kotlinPoet' }
+
+
+[plugins]
+
+anvil = { id = 'com.squareup.anvil', version.ref = 'anvil' }
+
+kotlin-jvm = { id = 'org.jetbrains.kotlin.jvm', version.ref = 'kotlin' }
