@@ -1,8 +1,8 @@
 [versions]
 
-anvil = '2.5.0'
+anvil = '2.5.1'
 
-dagger = '2.53'
+dagger = '2.55'
 
 java-source = '11'
 
