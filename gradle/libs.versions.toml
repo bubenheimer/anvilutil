@@ -2,7 +2,7 @@
 
 anvil = '2.5.1'
 
-dagger = '2.55'
+dagger = '2.56'
 
 java-source = '11'
 
