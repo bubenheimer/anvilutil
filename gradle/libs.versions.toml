@@ -1,14 +1,14 @@
 [versions]
 
-anvil = '2.5.1'
+anvil = '2.6.0'
 
-dagger = '2.56.1'
+dagger = '2.56.2'
 
 java-source = '11'
 
 java-toolchain = '21'
 
-kotlin = '2.1.21'
+kotlin = '2.2.0'
 
 kotlinPoet = '2.2.0'
 
