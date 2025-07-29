@@ -1,6 +1,6 @@
 [versions]
 
-anvil = '2.6.0'
+anvil = '2.6.1'
 
 dagger = '2.57'
 
